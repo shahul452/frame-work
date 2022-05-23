@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[setting up reports and started]]>
+    </line>
+    <line>
+      <![CDATA[setting Done]]>
+    </line>
+    <line>
+      <![CDATA[Bedsheet Done]]>
+    </line>
+    <line>
+      <![CDATA[searching Done]]>
+    </line>
+    <line>
+      <![CDATA[bedapp Done]]>
+    </line>
+    <line>
+      <![CDATA[assertions Done]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-05-23T13:08:48 IST" name="Default suite" finished-at="2022-05-23T13:11:35 IST" duration-ms="167052">
+    <groups>
+    </groups>
+    <test started-at="2022-05-23T13:08:48 IST" name="Default test" finished-at="2022-05-23T13:11:35 IST" duration-ms="167052">
+      <class name="Hybrid.logincrm">
+        <test-method is-config="true" signature="setupsuite()[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:08:46 IST" name="setupsuite" finished-at="2022-05-23T13:08:48 IST" duration-ms="2723" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[setting up reports and started]]>
+            </line>
+            <line>
+              <![CDATA[setting Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupsuite -->
+        <test-method is-config="true" signature="voidsetup()[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:08:48 IST" name="voidsetup" finished-at="2022-05-23T13:10:01 IST" duration-ms="72612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voidsetup -->
+        <test-method signature="loginApp()[pri:1, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:01 IST" name="loginApp" finished-at="2022-05-23T13:10:19 IST" duration-ms="18520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:20 IST" name="terdown" finished-at="2022-05-23T13:10:25 IST" duration-ms="5455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=logincrm.loginApp()[pri:1, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="signupapp()[pri:2, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:25 IST" name="signupapp" finished-at="2022-05-23T13:10:41 IST" duration-ms="16497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:41 IST" name="terdown" finished-at="2022-05-23T13:10:43 IST" duration-ms="1217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signupapp status=SUCCESS method=logincrm.signupapp()[pri:2, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="searchupapp()[pri:3, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:43 IST" name="searchupapp" finished-at="2022-05-23T13:10:50 IST" duration-ms="7140" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-172QFP2', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88806dc3ca44527a7d4e7607bdb78fef, sendKeysToElement {id=91a8b77c-7e52-4ec0-b6dd-671bc4fb005b, value=[Ljava.lang.CharSequence;@646d810b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (88806dc3ca44527a7d4e7607bdb78fef)] -> xpath: //input[@id='search']]
+Session ID: 88806dc3ca44527a7d4e7607bdb78fef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-172QFP2', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88806dc3ca44527a7d4e7607bdb78fef, sendKeysToElement {id=91a8b77c-7e52-4ec0-b6dd-671bc4fb005b, value=[Ljava.lang.CharSequence;@646d810b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (88806dc3ca44527a7d4e7607bdb78fef)] -> xpath: //input[@id='search']]
+Session ID: 88806dc3ca44527a7d4e7607bdb78fef
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+at Hybrid.Searrchpage.searcho(Searrchpage.java:24)
+at Hybrid.logincrm.searchupapp(logincrm.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Bedsheet Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchupapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:50 IST" name="terdown" finished-at="2022-05-23T13:10:54 IST" duration-ms="3739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchupapp status=FAILURE method=logincrm.searchupapp()[pri:3, instance:Hybrid.logincrm@47d9a273] output=Bedsheet Done]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="Bedapp()[pri:4, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:10:54 IST" name="Bedapp" finished-at="2022-05-23T13:11:06 IST" duration-ms="11998" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[searching Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Bedapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:06 IST" name="terdown" finished-at="2022-05-23T13:11:06 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Bedapp status=SUCCESS method=logincrm.Bedapp()[pri:4, instance:Hybrid.logincrm@47d9a273] output=searching Done]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="Bedappcart()[pri:5, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:06 IST" name="Bedappcart" finished-at="2022-05-23T13:11:13 IST" duration-ms="7701" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[bedapp Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Bedappcart -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:13 IST" name="terdown" finished-at="2022-05-23T13:11:14 IST" duration-ms="269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Bedappcart status=SUCCESS method=logincrm.Bedappcart()[pri:5, instance:Hybrid.logincrm@47d9a273] output=bedapp Done]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="assertions()[pri:6, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:14 IST" name="assertions" finished-at="2022-05-23T13:11:22 IST" duration-ms="8280" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[assertions Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- assertions -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:22 IST" name="terdown" finished-at="2022-05-23T13:11:22 IST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertions status=SUCCESS method=logincrm.assertions()[pri:6, instance:Hybrid.logincrm@47d9a273] output=assertions Done]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="tvappcart()[pri:7, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:22 IST" name="tvappcart" finished-at="2022-05-23T13:11:26 IST" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tvappcart -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:26 IST" name="terdown" finished-at="2022-05-23T13:11:26 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tvappcart status=SUCCESS method=logincrm.tvappcart()[pri:7, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="studyapp()[pri:8, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:26 IST" name="studyapp" finished-at="2022-05-23T13:11:31 IST" duration-ms="5258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studyapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:31 IST" name="terdown" finished-at="2022-05-23T13:11:31 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=studyapp status=SUCCESS method=logincrm.studyapp()[pri:8, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="aboutapp()[pri:9, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:31 IST" name="aboutapp" finished-at="2022-05-23T13:11:33 IST" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:33 IST" name="terdown" finished-at="2022-05-23T13:11:33 IST" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=aboutapp status=SUCCESS method=logincrm.aboutapp()[pri:9, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method signature="infoapp()[pri:10, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:33 IST" name="infoapp" finished-at="2022-05-23T13:11:34 IST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoapp -->
+        <test-method is-config="true" signature="terdown(org.testng.ITestResult)[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:34 IST" name="terdown" finished-at="2022-05-23T13:11:34 IST" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=infoapp status=SUCCESS method=logincrm.infoapp()[pri:10, instance:Hybrid.logincrm@47d9a273] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terdown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Hybrid.logincrm@47d9a273]" started-at="2022-05-23T13:11:34 IST" name="teardown" finished-at="2022-05-23T13:11:35 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Hybrid.logincrm -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
